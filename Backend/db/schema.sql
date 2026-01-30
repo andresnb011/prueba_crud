@@ -1,0 +1,14 @@
+
+
+CREATE DATABASE IF NOT EXISTS prueba_crud;
+
+USE prueba_crud;
+
+CREATE TABLE IF NOT EXISTS clientes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  documento VARCHAR(255) NOT NULL UNIQUE,
+  correo VARCHAR(255) NOT NULL,
+  estado VARCHAR(50) NOT NULL
+);
+
